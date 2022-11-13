@@ -6,146 +6,255 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.css">
     <title>MercadoGold</title>
 </head>
 
 <body>
     <div class="container-custom">
-        <header class="header">
-            <div class="logo">
-                <a href="index.html">
-                    <img height="50" src="./assets/logo.png" alt="Logo de MercadoGold" />
-                </a>
-            </div>
-            <nav class="menu">
-                <a class="menu__anchor" href="index.html">Inicio</a>
-                <a class="menu__anchor" href="offers.html">Ofertas</a>
-                <a class="menu__anchor" href="news.html">Novedades</a>
-                <a class="menu__anchor" href="signup.html">Registro</a>
-                <a class="menu__anchor" href="contact.html">Contacto</a>
+        <!-- Inicio Header -->
+        <header class="background-primary">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a href="index.html">
+                        <img height="50" width="200" src="./assets/logo.png" alt="Logo de MercadoGold" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="menu__anchor" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__anchor" href="offers.html">Ofertas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__anchor" href="news.html">Novedades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__anchor" href="signup.html">Registro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__anchor" href="contact.html">Contacto</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control" style="background-color: #eee; border-radius: 0%;" type="search"
+                                placeholder="Buscar" aria-label="Search">
+                            <button class="btn searchBar-button" type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </nav>
         </header>
+        <!-- Inicio Header -->
 
-        <div class="offers-bar">
-            <div class="offers-bar-text">
-                <h1 class="offers-bar-text__h1">Ofertas</h1>
-                <h2 class="offers-bar-text__h2">¡Encontrá precios increíbles cada día!</h2>
-            </div>
-            <div class="offers-bar-items">
-                <div class="offer-item">
-                    <img class="offer-item__img" src="assets/icons/off.png" alt="">
-                    <span class="offer-item__description">Todas las ofertas</span>
+        <!-- Begin offers-bar-desktop -->
+        <div id="offers-bar-desktop">
+            <div class="offers-bar">
+                <div class="offers-bar-text">
+                    <h1 class="offers-bar-text__h1">Ofertas</h1>
+                    <h2 class="offers-bar-text__h2">¡Encontrá precios increíbles cada día!</h2>
                 </div>
-                <div class="offer-item">
-                    <img class="offer-item__img" src="assets/icons/flash.png" alt="">
-                    <span class="offer-item__description">Ofertas relámpago</span>
-                </div>
-                <div class="offer-item">
-                    <img class="offer-item__img" src="assets/icons/phone.png" alt="">
-                    <span class="offer-item__description">Celulares</span>
-                </div>
-                <div class="offer-item">
-                    <img class="offer-item__img" src="assets/icons/notebook.png" alt="">
-                    <span class="offer-item__description">Notebooks</span>
-                </div>
-                <div class="offer-item">
-                    <img class="offer-item__img" src="assets/icons/tools.png" alt="">
-                    <span class="offer-item__description">Herramientas</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="offer-products">
-            <div class="offer-product-item">
-                <img src="./assets/products/product1.webp" alt="Producto" />
-                <div class="product-item-details">
-                    <div class="product-item__ofert">Oferta del día</div>
-                    <div class="product-item-details__price">
-                        <div class="product-item-details__amount">$ 64.999</div>
-                        <div class="product-item-details__discount">18% OFF</div>
+                <div class="offers-bar-items">
+                    <div class="offer-item">
+                        <img class="offer-item__img" src="assets/icons/off.png" alt="">
+                        <span class="offer-item__description">Todas las ofertas</span>
                     </div>
-                    <div class="product-item-details__footer">
-                        <div>3x $ 21.666 sin interés</div>
-                        <div class="product-item-details__footer-shipping">Envío gratis</div>
+                    <div class="offer-item">
+                        <img class="offer-item__img" src="assets/icons/flash.png" alt="">
+                        <span class="offer-item__description">Ofertas relámpago</span>
                     </div>
-                </div>
-            </div>
-            <div class="offer-product-item">
-                <img src="./assets/products/product2.webp" alt="Producto" />
-                <div class="product-item-details">
-                    <div class="product-item__ofert">Oferta del día</div>
-                    <div class="product-item-details__price">
-                        <div class="product-item-details__amount">$ 67.899</div>
-                        <div class="product-item-details__discount">24% OFF</div>
+                    <div class="offer-item">
+                        <img class="offer-item__img" src="assets/icons/phone.png" alt="">
+                        <span class="offer-item__description">Celulares</span>
                     </div>
-                    <div class="product-item-details__footer">
-                        <div>12x $ 5658 sin interés</div>
-                        <div class="product-item-details__footer-shipping">Envío gratis</div>
+                    <div class="offer-item">
+                        <img class="offer-item__img" src="assets/icons/notebook.png" alt="">
+                        <span class="offer-item__description">Notebooks</span>
                     </div>
-                </div>
-            </div>
-            <div class="offer-product-item">
-                <img src="./assets/products/product3.webp" alt="Producto" />
-                <div class="product-item-details">
-                    <div class="product-item__ofert">Oferta del día</div>
-                    <div class="product-item-details__price">
-                        <div class="product-item-details__amount">$ 32.859</div>
-                        <div class="product-item-details__discount">13% OFF</div>
-                    </div>
-                    <div class="product-item-details__footer">
-                        <div class="product-item-details__footer-shipping">Envío gratis</div>
+                    <div class="offer-item">
+                        <img class="offer-item__img" src="assets/icons/tools.png" alt="">
+                        <span class="offer-item__description">Herramientas</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="offer-products">
-            <div class="offer-product-item">
-                <img src="./assets/products/product4.webp" alt="Producto" />
-                <div class="product-item-details">
-                    <div class="product-item__ofert">Oferta del día</div>
-                    <div class="product-item-details__price">
-                        <div class="product-item-details__amount">$ 64.999</div>
-                        <div class="product-item-details__discount">18% OFF</div>
+        <!-- End offers-bar-desktop -->
+
+        <!-- Begin Offers bar mobile -->
+        <div class="offers-bar-text-mobile">
+            <div class="offers-bar-title-mobile">Ofertas</div>
+            <div class="offers-bar-subtitle-mobile">¡Encontrá precios increíbles cada día!</div>
+        </div>
+        <div id="offers-bar-mobile" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="offer-item">
+                        <img class="offer-item__img" src="assets/icons/off.png" alt="">
+                        <span class="offer-item__description">Todas las ofertas</span>
                     </div>
-                    <div class="product-item-details__footer">
-                        <div>3x $ 21.666 sin interés</div>
-                        <div class="product-item-details__footer-shipping">Envío gratis</div>
+                </div>
+                <div class="carousel-item">
+                    <div class="offer-item">
+                        <img class="offer-item__img" src="assets/icons/flash.png" alt="">
+                        <span class="offer-item__description">Ofertas relámpago</span>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="offer-item">
+                        <img class="offer-item__img" src="assets/icons/phone.png" alt="">
+                        <span class="offer-item__description">Celulares</span>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="offer-item">
+                        <img class="offer-item__img" src="assets/icons/notebook.png" alt="">
+                        <span class="offer-item__description">Notebooks</span>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="offer-item">
+                        <img class="offer-item__img" src="assets/icons/tools.png" alt="">
+                        <span class="offer-item__description">Herramientas</span>
                     </div>
                 </div>
             </div>
-            <div class="offer-product-item">
-                <img src="./assets/products/product5.webp" alt="Producto" />
-                <div class="product-item-details">
-                    <div class="product-item__ofert">Oferta del día</div>
-                    <div class="product-item-details__price">
-                        <div class="product-item-details__amount">$ 67.899</div>
-                        <div class="product-item-details__discount">24% OFF</div>
+            <button style="margin-left: 1em;" class="carousel-control-prev" type="button"
+                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- End Offers bar mobile -->
+
+        <div class="container-fluid mt-5">
+            <div class="row justify-content-center">
+                <div class="offer-product-item col-12 col-md-3 d-flex justify-content-center mt-4">
+                    <div>
+                        <img src="./assets/products/product1.webp" alt="Producto" />
+                        <div class="product-item-details">
+                            <div class="product-item__ofert">Oferta del día</div>
+                            <div class="product-item-details__price">
+                                <div class="product-item-details__amount">$ 64.999</div>
+                                <div class="product-item-details__discount">18% OFF</div>
+                            </div>
+                            <div class="product-item-details__footer">
+                                <div>3x $ 21.666 sin interés</div>
+                                <div class="product-item-details__footer-shipping">Envío gratis</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="product-item-details__footer">
-                        <div>12x $ 5658 sin interés</div>
-                        <div class="product-item-details__footer-shipping">Envío gratis</div>
+                </div>
+                <div class="offer-product-item col-12 col-md-3 d-flex justify-content-center mt-4">
+                    <div>
+                        <img src="./assets/products/product2.webp" alt="Producto" />
+                        <div class="product-item-details">
+                            <div class="product-item__ofert">Oferta del día</div>
+                            <div class="product-item-details__price">
+                                <div class="product-item-details__amount">$ 67.899</div>
+                                <div class="product-item-details__discount">24% OFF</div>
+                            </div>
+                            <div class="product-item-details__footer">
+                                <div>12x $ 5658 sin interés</div>
+                                <div class="product-item-details__footer-shipping">Envío gratis</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-product-item col-12 col-md-3 d-flex justify-content-center mt-4 ">
+                    <div>
+                        <img src="./assets/products/product3.webp" alt="Producto" />
+                        <div class="product-item-details">
+                            <div class="product-item__ofert">Oferta del día</div>
+                            <div class="product-item-details__price">
+                                <div class="product-item-details__amount">$ 32.859</div>
+                                <div class="product-item-details__discount">13% OFF</div>
+                            </div>
+                            <div class="product-item-details__footer">
+                                <br />
+                                <div class="product-item-details__footer-shipping">Envío gratis</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="offer-product-item">
-                <img src="./assets/products/product6.webp" alt="Producto" />
-                <div class="product-item-details">
-                    <div class="product-item__ofert">Oferta del día</div>
-                    <div class="product-item-details__price">
-                        <div class="product-item-details__amount">$ 32.859</div>
-                        <div class="product-item-details__discount">13% OFF</div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="offer-product-item col-12 col-md-3 d-flex justify-content-center mt-4">
+                    <div>
+                        <img src="./assets/products/product4.webp" alt="Producto" />
+                        <div class="product-item-details">
+                            <div class="product-item__ofert">Oferta del día</div>
+                            <div class="product-item-details__price">
+                                <div class="product-item-details__amount">$ 64.999</div>
+                                <div class="product-item-details__discount">18% OFF</div>
+                            </div>
+                            <div class="product-item-details__footer">
+                                <div>3x $ 21.666 sin interés</div>
+                                <div class="product-item-details__footer-shipping">Envío gratis</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="product-item-details__footer">
-                        <div class="product-item-details__footer-shipping">Envío gratis</div>
+                </div>
+                <div class="offer-product-item col-12 col-md-3 d-flex justify-content-center mt-4">
+                    <div>
+                        <img src="./assets/products/product5.webp" alt="Producto" />
+                        <div class="product-item-details">
+                            <div class="product-item__ofert">Oferta del día</div>
+                            <div class="product-item-details__price">
+                                <div class="product-item-details__amount">$ 67.899</div>
+                                <div class="product-item-details__discount">24% OFF</div>
+                            </div>
+                            <div class="product-item-details__footer">
+                                <div>12x $ 5658 sin interés</div>
+                                <div class="product-item-details__footer-shipping">Envío gratis</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-product-item col-12 col-md-3 d-flex justify-content-center mt-4">
+                    <div>
+                        <img src="./assets/products/product6.webp" alt="Producto" />
+                        <div class="product-item-details">
+                            <div class="product-item__ofert">Oferta del día</div>
+                            <div class="product-item-details__price">
+                                <div class="product-item-details__amount">$ 32.859</div>
+                                <div class="product-item-details__discount">13% OFF</div>
+                            </div>
+                            <div class="product-item-details__footer">
+                                <div class="product-item-details__footer-shipping">Envío gratis</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <footer class="offer-footer">Desarrollado por Raúl Esperante</footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

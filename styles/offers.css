@@ -27,6 +27,10 @@
     align-items: center;
 }
 
+.product-item-details{
+    background-color: #fff;
+}
+
 .offer-item__description{
     margin-top: 10px
 }
@@ -55,9 +59,49 @@
     margin-top: 5em;
 }
 
-.offer-product-item{
-    margin-left: 3em;
-    margin-right: 3em; 
-    max-width: 15em;
-    background-color: #fff;
+
+#offers-bar-desktop{
+    display: none;
 }
+
+#offers-bar-mobile{
+    background-color: #fff;
+}    
+
+.offers-bar-text-mobile{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.offers-bar-title-mobile{
+    font-size: 2em;
+}
+
+.offers-bar-subtitle-mobile{
+    font-size: 1.3em;
+}
+
+.offer-product-item{
+    height: 400px;
+}
+
+/* Desktop */
+@media (min-width: 700px) {
+    #offers-bar-desktop{
+        display: block;
+    }
+    #offers-bar-mobile{
+        display: none;
+    }    
+    .offers-bar-text-mobile{
+        display: none;
+    }
+
+
+
+}
+
+
+    
