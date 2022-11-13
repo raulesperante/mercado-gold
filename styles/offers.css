@@ -61,3 +61,18 @@
     max-width: 15em;
     background-color: #fff;
 }
+
+
+#offers-bar-desktop{
+    display: none;
+}
+
+/* Desktop */
+@media (min-width: 700px) {
+    #offers-bar-desktop{
+        display: block;
+    }
+}
+
+
+    
