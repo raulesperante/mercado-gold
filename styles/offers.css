@@ -59,13 +59,6 @@
     margin-top: 5em;
 }
 
-.offer-product-item{
-    /* margin-left: 3em; */
-    /* margin-right: 3em;  */
-    /* max-width: 15em; */
-    /* background-color: #fff; */
-}
-
 
 #offers-bar-desktop{
     display: none;
@@ -88,6 +81,10 @@
 
 .offers-bar-subtitle-mobile{
     font-size: 1.3em;
+}
+
+.offer-product-item{
+    height: 400px;
 }
 
 /* Desktop */
