@@ -67,11 +67,39 @@
     display: none;
 }
 
+#offers-bar-mobile{
+    background-color: #fff;
+}    
+
+.offers-bar-text-mobile{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.offers-bar-title-mobile{
+    font-size: 2em;
+}
+
+.offers-bar-subtitle-mobile{
+    font-size: 1.3em;
+}
+
 /* Desktop */
 @media (min-width: 700px) {
     #offers-bar-desktop{
         display: block;
     }
+    #offers-bar-mobile{
+        display: none;
+    }    
+    .offers-bar-text-mobile{
+        display: none;
+    }
+
+
+
 }
 
 
