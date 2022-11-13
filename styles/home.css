@@ -1,0 +1,58 @@
+.home-slogan {
+    background-color: var(--gold);
+    height: 13em;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.home-slogan__h1 {
+    font-size: 1.4em;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.home-slogan__h2 {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 0.7em;
+
+}
+
+.home-slogan__h3 {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 1em;
+    font-weight: 700;
+}
+
+/* Desktop */
+@media (min-width: 700px) {
+    .home-slogan__h1 {
+        font-size: 3em;
+        text-align: center;
+        padding-top: 1em;
+    }
+
+    .home-slogan__h2 {
+        font-size: 2em;
+        text-align: center;
+        margin-top: 0.7em;
+
+    }
+
+    .home-slogan__h3 {
+        font-size: 1.5em;
+        text-align: center;
+        margin-top: 1em;
+        font-weight: 700;
+    }
+
+    .home-slogan {
+        background-color: var(--gold);
+        height: 18em;
+        display: flex;
+        flex-direction: column;
+    }
+
+}

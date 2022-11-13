@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>MercadoGold</title>
+</head>
+
+<body>
+    <div class="">
+        <header class="background-primary">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a href="index.html">
+                        <img height="50" width="200" src="./assets/logo.png" alt="Logo de MercadoGold" />
+                    </a>
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="menu__anchor" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__anchor" href="offers.html">Ofertas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__anchor" href="news.html">Novedades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__anchor" href="signup.html">Registro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__anchor" href="contact.html">Contacto</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control" style="background-color: #eee; border-radius: 0%;" type="search"
+                                placeholder="Buscar" aria-label="Search">
+                            <button class="btn searchBar-button" type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="home-slogan">
+            <h1 class="home-slogan__h1">Eso que buscás, encontralo en MercadoGold</h1>
+            <h2 class="home-slogan__h2">Lo mejor está llegando</h2>
+            <h3 class="home-slogan__h3">MercadoGold</h3>
+        </div>
+        <div class="products mt-5 mb-5">
+            <div class="product-item">
+                <img src="./assets/products/product1.webp" alt="Producto" />
+                <div class="product-item-details">
+                    <div class="product-item-details__price">
+                        <div class="product-item-details__amount">$ 64.999</div>
+                        <div class="product-item-details__discount">18% OFF</div>
+                    </div>
+                    <div class="product-item-details__footer">
+                        <div>3x $ 21.666 sin interés</div>
+                        <div class="product-item-details__footer-shipping">Envío gratis</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="./assets/products/product2.webp" alt="Producto" />
+                <div class="product-item-details">
+                    <div class="product-item-details__price">
+                        <div class="product-item-details__amount">$ 67.899</div>
+                        <div class="product-item-details__discount">24% OFF</div>
+                    </div>
+                    <div class="product-item-details__footer">
+                        <div>12x $ 5658 sin interés</div>
+                        <div class="product-item-details__footer-shipping">Envío gratis</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="./assets/products/product3.webp" alt="Producto" />
+                <div class="product-item-details">
+                    <div class="product-item-details__price">
+                        <div class="product-item-details__amount">$ 32.859</div>
+                        <div class="product-item-details__discount">13% OFF</div>
+                    </div>
+                    <div class="product-item-details__footer">
+                        <div class="product-item-details__footer-shipping">Envío gratis</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="./assets/products/product4.webp" alt="Producto" />
+                <div class="product-item-details">
+                    <div class="product-item-details__price">
+                        <div class="product-item-details__amount">$ 16.899</div>
+                        <div class="product-item-details__discount">24% OFF</div>
+                    </div>
+                    <div class="product-item-details__footer">
+                        <div class="product-item-details__footer-shipping">Envío gratis</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="./assets/products/product5.webp" alt="Producto" />
+                <div class="product-item-details">
+                    <div class="product-item-details__price">
+                        <div class="product-item-details__amount">$ 28.999</div>
+                        <div class="product-item-details__discount">17% OFF</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="fixed-bottom ">Desarrollado por Raúl Esperante</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

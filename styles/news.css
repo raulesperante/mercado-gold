@@ -1,0 +1,64 @@
+
+.news{
+    display: flex;
+    justify-content: center;
+}
+
+.news-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.news__container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.news__title{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+.news__item{
+    display: flex;
+    padding: 1em;
+    background-color: #fff;
+    height: 10em;
+    width: 100%;
+}
+
+.news__item-photo{
+    height: 8em;
+    width: 8em;
+}
+
+.news__item-description-container{
+    padding-left: 2em;
+}
+
+.news__item-description{
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.news__item-price{
+    font-size: 1.8em;
+    font-weight: 400;
+    margin-top: .25em;
+}
+
+.news__item-time-shipping{
+    background-color: rgb(185, 244, 185);
+    color: rgb(35, 142, 35);
+    display: inline-flex;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: .5em;
+}
+
+
+

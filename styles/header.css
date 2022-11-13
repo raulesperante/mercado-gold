@@ -1,0 +1,26 @@
+
+
+.header{
+    display: flex;
+    background-color: var(--primary) ;
+    padding: 1em;
+}
+
+.menu{
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.menu__anchor{
+    font-size: 1.3em;
+    padding-left: 1em;
+}
+
+.menu__anchor:hover{
+    font-weight: 700;
+}
+
+.logo{
+    width: 20%;
+}

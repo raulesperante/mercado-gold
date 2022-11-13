@@ -1,0 +1,68 @@
+:root {
+    --primary: #FFF159;
+    --gold: #F2CF30;
+    --discount-price: green;
+    --footer: #292311;
+}
+
+.background-primary {
+    background-color: var(--primary) !important
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+html,
+body,
+button,
+a,
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    background-color: #eee;
+}
+
+a {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+    padding: 9px;
+}
+
+.vh100 {
+    height: 100vh;
+}
+
+/* Margins */
+.mb1 {
+    margin-bottom: 1em;
+}
+
+.mb5 {
+    margin-bottom: 5em;
+}
+
+.mt1 {
+    margin-top: 1em;
+}
+
+.container-custom {
+    min-height: 100vh;
+}
+
+.searchBar-button {
+    background-color: #3382FB;
+    border-radius: 0 !important;
+    color: lightgray;
+}
+
+.searchBar-button:hover {
+    background-color: blue;
+    color: lightgray;
+}
