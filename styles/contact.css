@@ -79,4 +79,28 @@
     padding: 10px;
 }
 
+/* Mobile */
+@media (max-width: 700px) {
+    .contact-container-left{
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 2em;
+    }
+    .contact-container-right{
+        width: 100%;;
+    }
+
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-container__inputs{
+        width: 100%;
+    }
+
+
+
+
+}
 
