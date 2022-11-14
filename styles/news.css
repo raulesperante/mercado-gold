@@ -1,27 +1,26 @@
-
-.news{
+.news {
     display: flex;
     justify-content: center;
 }
 
-.news-column{
+.news-column {
     display: flex;
     flex-direction: column;
 }
 
-.news__container{
+.news__container {
     display: flex;
     width: 100%;
     flex-direction: column;
 }
 
-.news__title{
+.news__title {
     margin-top: 1em;
     margin-bottom: 1em;
     font-size: 2em;
 }
 
-.news__item{
+.news__item {
     display: flex;
     padding: 1em;
     background-color: #fff;
@@ -29,27 +28,27 @@
     width: 100%;
 }
 
-.news__item-photo{
+.news__item-photo {
     height: 8em;
     width: 8em;
 }
 
-.news__item-description-container{
+.news__item-description-container {
     padding-left: 2em;
 }
 
-.news__item-description{
+.news__item-description {
     font-size: 1.5em;
     font-weight: 300;
 }
 
-.news__item-price{
+.news__item-price {
     font-size: 1.8em;
     font-weight: 400;
     margin-top: .25em;
 }
 
-.news__item-time-shipping{
+.news__item-time-shipping {
     background-color: rgb(185, 244, 185);
     color: rgb(35, 142, 35);
     display: inline-flex;
@@ -60,8 +59,23 @@
     margin-top: .5em;
 }
 
-.item-news-mobile{
+.item-news-mobile {
     display: flex;
     width: 200px;
 }
 
+#items-news-desktop{
+    display: none;
+}
+
+/* Desktop */
+@media (min-width: 700px) {
+    #items-news-mobile {
+        display: none;
+    }
+    #items-news-desktop{
+        display: flex;
+    }
+
+
+}
