@@ -60,5 +60,8 @@
     margin-top: .5em;
 }
 
-
+.item-news-mobile{
+    display: flex;
+    width: 200px;
+}
 
