@@ -99,6 +99,13 @@
     margin: auto;
 }
 
+#title-mobile-news{
+    font-size: 1.3em;
+    text-align: center;
+    padding: 0;
+    
+}
+
 /* Desktop */
 @media (min-width: 700px) {
     #offers-bar-desktop{
